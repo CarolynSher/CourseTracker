@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.wgu.coursetracker.AddTermActivity"
+    tools:showIn="@layout/activity_add_term">
+
+
+    <TextView
+        android:id="@+id/TermTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="18sp"
+        android:text="@string/term_title" />
+    
+    <EditText
+        android:id="@+id/title_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/TermTitle"
+        android:layout_toEndOf="@+id/TermTitle"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@+id/TermTitle"/>
+
+    <TextView
+        android:id="@+id/StartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TermTitle"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="18sp"
+        android:text="@string/start_date" />
+
+    <EditText
+        android:id="@+id/start_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_input"
+        android:layout_toRightOf="@id/StartDate"
+        android:layout_toEndOf="@+id/StartDate"
+        android:layout_alignBaseline="@+id/StartDate"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/EndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/StartDate"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:textSize="18sp"
+        android:text="@string/end_date" />
+
+    <EditText
+        android:id="@+id/end_date_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/start_date_input"
+        android:layout_toRightOf="@id/EndDate"
+        android:layout_toEndOf="@+id/EndDate"
+        android:layout_alignBaseline="@+id/EndDate"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/CancelButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/button_cancel"
+        android:onClick="finishActivity"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/EndDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/AddButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/button_add"
+        android:onClick="addTerm"
+        android:layout_below="@+id/end_date_input"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignTop="@+id/CancelButton"
+        android:layout_alignBottom="@+id/CancelButton" />
+
+</RelativeLayout>

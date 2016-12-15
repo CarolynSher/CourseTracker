@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.wgu.coursetracker.ShowCourseActivity"
+    tools:showIn="@layout/activity_show_course">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:paddingTop="10dp"
+        android:textSize="14sp"
+        android:id="@+id/Course"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="@string/start_date_show_course"
+        android:id="@+id/startDate"
+        android:layout_below="@+id/Course"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        android:id="@+id/startDateValue"
+        android:layout_below="@+id/Course"
+        android:layout_toRightOf="@+id/startDate"
+        android:layout_toEndOf="@+id/startDate"
+        android:layout_alignTop="@+id/startDate"
+        android:layout_alignBottom="@+id/startDate"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="@string/end_date_show_course"
+        android:id="@+id/endDate"
+        android:layout_below="@+id/startDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:id="@+id/endDateValue"
+        android:layout_below="@+id/startDateValue"
+        android:layout_toRightOf="@+id/endDate"
+        android:layout_toEndOf="@+id/endDate"
+        android:layout_alignTop="@+id/endDate"
+        android:layout_alignBottom="@+id/endDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="@string/status"
+        android:id="@+id/status"
+        android:layout_below="@+id/endDate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:id="@+id/statusValue"
+        android:layout_below="@+id/endDateValue"
+        android:layout_toRightOf="@+id/status"
+        android:layout_toEndOf="@+id/status"
+        android:layout_alignTop="@+id/status"
+        android:layout_alignBottom="@+id/status" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="@string/course_mentor_name_course"
+        android:id="@+id/courseMentorName"
+        android:layout_below="@+id/status"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="John Doe"
+        android:textSize="14sp"
+        android:id="@+id/courseMentorNameValue"
+        android:layout_below="@+id/courseMentorName"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="@string/course_mentor_phone_number"
+        android:id="@+id/courseMentorPhone"
+        android:layout_below="@+id/courseMentorNameValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="214-797-9755"
+        android:textSize="14sp"
+        android:id="@+id/courseMentorPhoneValue"
+        android:layout_below="@+id/courseMentorPhone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="14sp"
+        android:text="@string/course_mentor_email_address"
+        android:id="@+id/courseMentorEmail"
+        android:layout_below="@+id/courseMentorPhoneValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:text="rtrevi7@wgu.edu"
+        android:textSize="14sp"
+        android:id="@+id/courseMentorEmailValue"
+        android:layout_below="@+id/courseMentorEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="@string/assessments_text"
+        android:id="@+id/AssessmentText"
+        android:layout_below="@+id/courseMentorEmailValue"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/android:list"
+        android:layout_below="@+id/AssessmentText"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/set_course_alarms"
+        android:id="@+id/startAlarmButton"
+        android:onClick="setStartAlarm"
+        android:layout_below="@+id/courseMentorName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set End Alarm"
+        android:id="@+id/endAlarmButton"
+        android:onClick="setEndAlarm"
+        android:layout_below="@+id/startAlarmButton"
+        android:layout_alignRight="@+id/startAlarmButton"
+        android:layout_alignEnd="@+id/startAlarmButton"/>
+
+</RelativeLayout>

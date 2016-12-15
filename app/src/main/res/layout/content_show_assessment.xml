@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="edu.wgu.coursetracker.ShowAssessmentActivity"
+    tools:showIn="@layout/activity_show_assessment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assessment_title"
+        android:id="@+id/assessmentTitleText"
+        android:textSize="18sp"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/assessmentTitleValue"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/assessmentTitleText"
+        android:layout_toRightOf="@+id/assessmentTitleText"
+        android:layout_alignBaseline="@+id/assessmentTitleText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assessment_type"
+        android:id="@+id/assessmentTypeText"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@+id/assessmentTitleText"/>
+
+    <TextView
+        android:id="@+id/assessmentTypeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/assessmentTypeText"
+        android:layout_toRightOf="@+id/assessmentTypeText"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBaseline="@+id/assessmentTypeText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/due_date"
+        android:id="@+id/assessmentDueDateText"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingEnd="10dp"
+        android:layout_below="@+id/assessmentTypeText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/assessmentDueDateValue"
+        android:textSize="18sp"
+        android:layout_toEndOf="@+id/assessmentTitleText"
+        android:layout_toRightOf="@+id/assessmentTitleText"
+        android:layout_alignBaseline="@+id/assessmentDueDateText" />
+
+</RelativeLayout>
